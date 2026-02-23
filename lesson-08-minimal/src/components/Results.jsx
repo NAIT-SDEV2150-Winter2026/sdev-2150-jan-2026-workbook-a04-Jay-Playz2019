@@ -9,10 +9,19 @@ export default function Results()
       style={{
         width: '45%',
         border: '1px solid black'
-      }}
-    >
-      <div>Results</div>
-
+      }}>
+        <div>
+            {resources.map((r) => (
+                <ResultsItem
+                    key = {r.id}
+                    title = {r.title}
+                    category = {r.category}
+                    summary = {r.summary}
+                    location = {r.location}
+                    >
+                </ResultsItem>
+            ))}
+        </div>
       
       </div>
   );

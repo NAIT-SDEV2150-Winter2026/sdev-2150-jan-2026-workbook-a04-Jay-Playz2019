@@ -1,7 +1,7 @@
 import Header from './components/Header';
 import Filters from './components/Filters';
 import Results from './components/Results';
-import Details from './components/Details';
+// import Details from './components/Details';
 
 export default function App()
 {
@@ -16,6 +16,8 @@ export default function App()
       }}
     >
         <Filters />
+        <Results />
+        <Details />
 
       </div>
     </>
